@@ -1,0 +1,32 @@
+/* 기본 초기화 및 반응형 박스 모델 설정 */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Malgun Gothic', sans-serif; color: #333; line-height: 1.6; }
+.container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+/* 헤더 레이아웃 */
+.site-header { border-bottom: 1px solid #ddd; padding: 15px 0; background: #fff; }
+.header-flex { display: flex; justify-content: space-between; align-items: center; }
+.main-nav ul { display: flex; list-style: none; gap: 30px; }
+.main-nav a { text-decoration: none; color: #222; font-weight: bold; }
+
+/* 히어로 배너 */
+.hero-section { background: linear-gradient(135deg, #004085, #007bff); color: #fff; padding: 80px 0; text-align: center; }
+.hero-section h2 { font-size: 2.5rem; margin-bottom: 15px; }
+
+/* 제품 프리뷰 그리드 (반응형 자동 배치) */
+.products-preview { padding: 50px 0; }
+.products-preview h3 { font-size: 1.8rem; margin-bottom: 25px; text-align: center; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+.product-card { border: 1px solid #e1e1e1; padding: 15px; border-radius: 6px; text-align: center; background: #fafafa; }
+.product-card img { max-width: 100%; height: auto; margin-bottom: 15px; }
+
+/* 푸터 */
+.site-footer { background: #222; color: #aaa; padding: 30px 0; font-size: 0.9rem; text-align: center; }
+.copyright { margin-top: 10px; color: #777; }
+
+/* 모바일 화면 최적화 (너비 768px 이하) */
+@media (max-width: 768px) {
+    .header-flex { flex-direction: column; gap: 15px; }
+    .main-nav ul { gap: 15px; }
+    .hero-section h2 { font-size: 1.8rem; }
+}

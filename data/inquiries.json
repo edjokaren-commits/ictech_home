@@ -1,0 +1,38 @@
+[
+  {
+    "id": "inq-1794816511065-5fb1d4",
+    "createdAt": "2026-11-16T08:08:31.065Z",
+    "inquiryType": "quote",
+    "inquiryTypeLabel": "제품 견적 · 샘플",
+    "productModel": "KINO-ADL-H610",
+    "quantity": "1~3대 (테스트/소량)",
+    "selectedReqs": [],
+    "companyName": "ictech.co.kr",
+    "contactName": "seokhyun cho",
+    "phone": "01090324694",
+    "email": "edjokaren@gmail.com",
+    "message": "test",
+    "recipient": "ICTY@ICTECH.CO.KR",
+    "emailStatus": "sent",
+    "emailProvider": "smtp"
+  },
+  {
+    "id": "inq-1794461783323-ad69eb",
+    "createdAt": "2026-11-12T05:36:23.323Z",
+    "inquiryType": "quote",
+    "inquiryTypeLabel": "제품 견적 · 샘플",
+    "productModel": "WAFER-EHL",
+    "quantity": "1~5대 (테스트/소량)",
+    "selectedReqs": [
+      "팬리스(무팬) 설계 필수"
+    ],
+    "companyName": "ictech.co.kr",
+    "contactName": "seokhyun cho",
+    "phone": "01090324694",
+    "email": "edjokaren@gmail.com",
+    "message": "",
+    "recipient": "ICTY@ICTECH.CO.KR",
+    "emailStatus": "sent",
+    "emailProvider": "smtp"
+  }
+]

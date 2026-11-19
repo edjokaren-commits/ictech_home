@@ -1,0 +1,598 @@
+[
+  {
+    "slug": "imba-r680",
+    "modelCode": "IMBA-R680",
+    "name": "LGA1700 ATX 산업용 메인보드 (R680E)",
+    "category": "motherboard",
+    "categoryLabel": "산업용 메인보드",
+    "visualType": "atx",
+    "tagline": "ATX motherboard supports LGA1700 Intel® 12/13/14th generation Core™ i9/i7/i5/i3, Celeron® and Pentium® processor & Intel Core Processors (Series 2)(Bartlett Lake S)",
+    "summary": "LGA1700 소켓 기반 Intel 12/13/14세대 Core 프로세서 및 Intel Core (Series 2, Bartlett Lake S)를 지원하는 R680E 칩셋 ATX 산업용 메인보드입니다. ECC DDR5 메모리, 듀얼 2.5GbE, 다중 PCIe 확장 슬롯 및 레거시 COM/PCI 호환성으로 머신비전·반도체 검사 장비에 최적화되어 있습니다.",
+    "badges": [
+      "ATX",
+      "R680E",
+      "LGA1700",
+      "ECC DDR5",
+      "Bartlett Lake S"
+    ],
+    "filterTags": [
+      "장기공급",
+      "다중 시리얼",
+      "PCI 슬롯",
+      "고성능 AI/비전"
+    ],
+    "highlights": [
+      "Intel® 12/13/14세대 Core™ 및 Intel® Core™ Series 2 (Bartlett Lake S) 프로세서 지원",
+      "Intel® R680E 칩셋 기반 DDR5 ECC / Non-ECC U-DIMM 최대 128GB 지원",
+      "4중 독립 디스플레이 출력 (HDMI, DP++, iDP 등) 및 초고속 M.2 M-Key 지원",
+      "Dual Intel® 2.5GbE LAN, 다중 RS-232/422/485 및 PCIe Gen4/PCI 확장 슬롯 탑재"
+    ],
+    "applications": [
+      "반도체 광학 검사장비",
+      "머신비전 AI 추론 워크스테이션",
+      "4U 랙마운트 자동화 제어기"
+    ],
+    "specs": [
+      {
+        "label": "폼팩터",
+        "value": "ATX (305 x 244 mm)"
+      },
+      {
+        "label": "지원 CPU",
+        "value": "LGA1700 Intel® 12/13/14th Gen Core™ i9/i7/i5/i3, Pentium®/Celeron® & Core Series 2 (Bartlett Lake S)"
+      },
+      {
+        "label": "칩셋 / 메모리",
+        "value": "Intel® R680E / 4x DDR5 ECC & Non-ECC U-DIMM (최대 128GB)"
+      },
+      {
+        "label": "확장 슬롯",
+        "value": "PCIe Gen4 x16 (또는 듀얼 x8), PCIe Gen4 x4, PCIe x1, PCI 32-bit"
+      },
+      {
+        "label": "네트워크",
+        "value": "Dual Intel® I226-LM/V 2.5GbE LAN"
+      },
+      {
+        "label": "스토리지",
+        "value": "M.2 M-Key NVMe, SATA 6Gb/s x4 (RAID 0/1/5/10)"
+      },
+      {
+        "label": "시리얼 / USB",
+        "value": "RS-232/422/485 x2 + RS-232 x4, USB 3.2 Gen2 / Gen1 다중 지원"
+      },
+      {
+        "label": "인증 / 규정",
+        "value": "RoHS, CE/FCC 산업용 규격"
+      }
+    ],
+    "supplyYears": "7년 장기 공급 보장",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "IEI",
+    "externalUrl": "https://www.ieiworld.com/kr/product/IMBA-R680.php",
+    "imageUrl": "https://www.ieiworld.com/_images/product/items/887_1.png?t=2026-11-12_13",
+    "datasheetUrl": "https://dls.ieiworld.com/IEIWeb/PDC_OBJ/NOTES/DATASHEET/2022_Catalog/Embedded_Computer/IMBA-R680_20260311_EN.pdf"
+  },
+  {
+    "slug": "pcie-rpl-q670",
+    "modelCode": "PCIE-RPL-Q670",
+    "name": "PICMG 1.3 Full-size CPU 카드 (Q670E)",
+    "category": "motherboard",
+    "categoryLabel": "산업용 메인보드",
+    "visualType": "pcie-card",
+    "tagline": "Full-size PICMG 1.3 CPU Card supports LGA1700 Intel® 12th/13th/14th Gen. Core™ i9/i7/i5/i3/Pentium®/Celeron® CPU with Q670E, DDR5, HDMI™, DP, Dual Intel® 2.5GbE, USB 3.2, SATA 6Gb/s, M.2, HD Audio and RoHS",
+    "summary": "다수의 PCIe 및 레거시 PCI 확장 카드를 장착하는 산업용 백플레인(Backplane) 시스템용 Full-size PICMG 1.3 싱글 보드 컴퓨터(CPU 카드)입니다. Intel Q670E 칩셋과 DDR5 메모리, 듀얼 2.5GbE, M.2 NVMe를 지원하여 기존 랙마운트/셔틀 설비의 성능을 손쉽게 업그레이드할 수 있습니다.",
+    "badges": [
+      "PICMG 1.3",
+      "Q670E",
+      "DDR5",
+      "Dual 2.5GbE",
+      "RoHS"
+    ],
+    "filterTags": [
+      "장기공급",
+      "PCI 슬롯",
+      "다중 시리얼",
+      "고성능 AI/비전"
+    ],
+    "highlights": [
+      "Full-size PICMG 1.3 표준 규격으로 14슬롯/20슬롯 산업용 백플레인 완벽 호환",
+      "LGA1700 Intel® 12/13/14세대 Core™ i9/i7/i5/i3 및 Q670E 임베디드 칩셋 탑재",
+      "Dual-channel DDR5 Long-DIMM, M.2 M-Key NVMe 및 SATA 6Gb/s RAID 지원",
+      "HDMI™ + DP 듀얼 고해상도 디스플레이, Dual Intel® 2.5GbE, USB 3.2 및 HD Audio 지원"
+    ],
+    "applications": [
+      "다축 모션/DIO 백플레인 설비",
+      "반도체·디스플레이 공정 제어 랙",
+      "국방·레이더 및 통신 시험장비"
+    ],
+    "specs": [
+      {
+        "label": "규격(폼팩터)",
+        "value": "Full-size PICMG 1.3 CPU Card"
+      },
+      {
+        "label": "지원 CPU",
+        "value": "LGA1700 Intel® 12th/13th/14th Gen Core™ i9/i7/i5/i3, Pentium®, Celeron®"
+      },
+      {
+        "label": "칩셋 / 메모리",
+        "value": "Intel® Q670E / DDR5 U-DIMM x2"
+      },
+      {
+        "label": "디스플레이",
+        "value": "HDMI™, DisplayPort™ (브래킷 및 내부 헤더 지원)"
+      },
+      {
+        "label": "네트워크",
+        "value": "Dual Intel® 2.5GbE LAN"
+      },
+      {
+        "label": "스토리지 / M.2",
+        "value": "M.2 M-Key 2280, SATA 6Gb/s 포트"
+      },
+      {
+        "label": "I/O 인터페이스",
+        "value": "USB 3.2, RS-232/422/485, LPT, HD Audio, TPM 2.0 헤더"
+      },
+      {
+        "label": "친환경 규격",
+        "value": "RoHS 준수"
+      }
+    ],
+    "supplyYears": "7년 장기 공급 보장",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "IEI",
+    "externalUrl": "https://www.ieiworld.com/kr/product/PCIE-RPL-Q670.php",
+    "imageUrl": "https://www.ieiworld.com/_images/product/items/1057_1.png?t=2026-11-12_14",
+    "datasheetUrl": "https://dls.ieiworld.com/IEIWeb/PDC_OBJ/NOTES/DATASHEET/2022_Catalog/Embedded_Computer/PCIE-RPL-Q670_20251113_EN.pdf"
+  },
+  {
+    "slug": "imba-q670",
+    "modelCode": "IMBA-ADL-Q670",
+    "name": "Q670E ATX 산업용 메인보드",
+    "category": "motherboard",
+    "categoryLabel": "산업용 메인보드",
+    "visualType": "atx",
+    "tagline": "Intel 12~14세대 Core 지원, 6x COM 및 다중 PCIe/PCI 확장 ATX 보드",
+    "summary": "Intel Q670E 칩셋을 탑재해 기업/산업용 원격 관리(vPro)와 안정적인 다중 슬롯 확장을 제공하는 표준 ATX 산업용 메인보드입니다.",
+    "badges": [
+      "ATX",
+      "Q670E",
+      "6x COM",
+      "Intel vPro"
+    ],
+    "filterTags": [
+      "장기공급",
+      "다중 시리얼",
+      "PCI 슬롯"
+    ],
+    "highlights": [
+      "Intel 12/13/14세대 Core 프로세서 및 DDR4/DDR5 플랫폼 대응",
+      "RS-232/422/485 포함 총 6개 시리얼 포트 및 레거시 PCI 슬롯 제공",
+      "Intel AMT / vPro 기반 원격 전원 제어 및 모니터링 지원"
+    ],
+    "applications": [
+      "공장 자동화(FA) 메인 제어기",
+      "SCADA 관제 서버",
+      "다중 카메라 검사기"
+    ],
+    "specs": [
+      {
+        "label": "폼팩터",
+        "value": "ATX (305 x 244 mm)"
+      },
+      {
+        "label": "CPU / 칩셋",
+        "value": "LGA1700 12/13/14th Gen Core / Intel® Q670E"
+      },
+      {
+        "label": "네트워크",
+        "value": "Dual 2.5GbE LAN"
+      },
+      {
+        "label": "시리얼",
+        "value": "COM x6 (RS-232 x4, RS-232/422/485 x2)"
+      }
+    ],
+    "supplyYears": "7년 장기 공급 보장",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "IEI",
+    "externalUrl": "https://www.ieiworld.com/kr/product/IMBA-ADL-Q670.php",
+    "imageUrl": "https://www.ieiworld.com/_images/product/items/945_1.png?t=2026-11-12_14",
+    "datasheetUrl": "https://dls.ieiworld.com/IEIWeb/PDC_OBJ/NOTES/DATASHEET/2022_Catalog/Embedded_Computer/IMBA-ADL-Q670_20251113_EN.pdf"
+  },
+  {
+    "slug": "kino-adl-h610",
+    "modelCode": "KINO-ADL-H610",
+    "name": "H610 가성비 Mini-ITX 산업용 메인보드",
+    "category": "motherboard",
+    "categoryLabel": "산업용 메인보드",
+    "visualType": "mini-itx",
+    "tagline": "비용 효율성과 산업용 신뢰성을 겸비한 LGA1700 Mini-ITX 보드",
+    "summary": "양산형 키오스크, POS, 공정 터미널에 최적화된 H610 칩셋 기반의 합리적인 가격대 산업용 Mini-ITX 메인보드입니다.",
+    "badges": [
+      "Mini-ITX",
+      "H610",
+      "가성비",
+      "4x COM"
+    ],
+    "filterTags": [
+      "장기공급",
+      "다중 시리얼",
+      "Mini-ITX"
+    ],
+    "highlights": [
+      "LGA1700 12/13/14세대 i3/i5 및 Pentium/Celeron 폭넓은 CPU 선택",
+      "4개 COM 포트 및 12V 단일 DC 입력 모델 선택 가능",
+      "일반 상용 보드 대비 높은 전원부 내구성 및 장기 공급"
+    ],
+    "applications": [
+      "리테일 키오스크",
+      "물류 분류 터미널",
+      "생산 라인 MES 단말"
+    ],
+    "specs": [
+      {
+        "label": "폼팩터",
+        "value": "Mini-ITX (170 x 170 mm)"
+      },
+      {
+        "label": "칩셋 / 메모리",
+        "value": "Intel H610 / DDR4 SO-DIMM x2"
+      },
+      {
+        "label": "네트워크 / I/O",
+        "value": "Dual GbE LAN, COM x4, USB 3.2 x4"
+      }
+    ],
+    "supplyYears": "5년 이상 장기 공급",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "IEI",
+    "externalUrl": "https://www.ieiworld.com/kr/product/KINO-ADL-H610.php",
+    "imageUrl": "https://www.ieiworld.com/_images/product/items/907_1.png?t=2026-11-12_14",
+    "datasheetUrl": "https://dls.ieiworld.com/IEIWeb/PDC_OBJ/NOTES/DATASHEET/2022_Catalog/Embedded_Computer/KINO-ADL-H610_20251113_EN.pdf"
+  },
+  {
+    "slug": "pcie-q470",
+    "modelCode": "PCIE-Q470",
+    "name": "PICMG 1.3 Full-size CPU 카드 (10세대)",
+    "category": "motherboard",
+    "categoryLabel": "산업용 메인보드",
+    "visualType": "pcie-card",
+    "tagline": "Windows 10 IoT 호환성이 검증된 LGA1200 PICMG 1.3 표준 CPU 카드",
+    "summary": "기존 Intel 10세대 기반 소프트웨어 환경 유지가 필요한 반도체·자동차 생산 라인용 Full-size PICMG 1.3 CPU 카드입니다.",
+    "badges": [
+      "PICMG 1.3",
+      "Q470E",
+      "LGA1200",
+      "Dual GbE"
+    ],
+    "filterTags": [
+      "장기공급",
+      "PCI 슬롯",
+      "다중 시리얼"
+    ],
+    "highlights": [
+      "Intel® 10th Gen Core™ i9/i7/i5/i3 및 Xeon® W 지원",
+      "PCIe + PCI 혼합 백플레인 완벽 호환",
+      "장기 검증된 드라이버 안정성"
+    ],
+    "applications": [
+      "자동차 조립라인 검사기",
+      "기존 10세대 설비 동일 스펙 증설"
+    ],
+    "specs": [
+      {
+        "label": "규격",
+        "value": "Full-size PICMG 1.3"
+      },
+      {
+        "label": "칩셋 / CPU",
+        "value": "Intel Q470E / LGA1200 10th Gen"
+      },
+      {
+        "label": "메모리",
+        "value": "DDR4 U-DIMM x2 (최대 64GB)"
+      }
+    ],
+    "supplyYears": "7년 장기 공급",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "IEI",
+    "imageUrl": "https://www.ieiworld.com/_images/product/items/863_1.png?t=2026-11-12_14",
+    "datasheetUrl": "https://dls.ieiworld.com/IEIWeb/PDC_OBJ/NOTES/DATASHEET/2022_Catalog/Embedded_Computer/HPCIE-Q470_20240822_EN.pdf"
+  },
+  {
+    "slug": "wsb-h410",
+    "modelCode": "WSB-H810",
+    "name": "PICMG 1.0 레거시 ISA/PCI CPU 카드",
+    "category": "motherboard",
+    "categoryLabel": "산업용 메인보드",
+    "visualType": "pcie-card",
+    "tagline": "오래된 ISA + PCI 백플레인 설비를 살리는 PICMG 1.0 표준 SBC",
+    "summary": "수십억 원대 설비의 ISA/PCI 인터페이스를 그대로 유지하면서 구형 펜티엄4·코어2듀오 PC를 최신 세대로 교체할 수 있는 PICMG 1.0 카드입니다.",
+    "badges": [
+      "PICMG 1.0",
+      "ISA 지원",
+      "PCI 지원",
+      "6x COM"
+    ],
+    "filterTags": [
+      "PCI 슬롯",
+      "다중 시리얼"
+    ],
+    "highlights": [
+      "PICMG 1.0 골드핑거(PCI + ISA) 규격 완벽 지원",
+      "LGA1200 Intel 10세대 Core CPU로 압도적 성능 향상",
+      "내장 LPT, PS/2, 다중 RS-232/422/485 지원"
+    ],
+    "applications": [
+      "노후 공작기계·의료기 유지보수",
+      "ISA 보드 탑재 국방·시험장비"
+    ],
+    "specs": [
+      {
+        "label": "규격",
+        "value": "Full-size PICMG 1.0"
+      },
+      {
+        "label": "백플레인 호환",
+        "value": "32-bit PCI + 16-bit ISA"
+      },
+      {
+        "label": "시리얼",
+        "value": "COM x6"
+      }
+    ],
+    "supplyYears": "곧 단종예정",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "IEI",
+    "imageUrl": "https://www.ieiworld.com/_images/product/items/209_1.png?t=2026-11-12_15"
+  },
+  {
+    "slug": "picoe-adl-h610",
+    "modelCode": "ICT-700IATX",
+    "name": "Half-size PICMG 1.3 콤팩트 CPU 카드",
+    "category": "module",
+    "categoryLabel": "케이스 및 기타",
+    "visualType": "pcie-card",
+    "tagline": "소형 월마운트·4슬롯 섀시용 하프사이즈 PICMG 1.3 보드",
+    "summary": "▶ ATX와 micro-ATX,MINI-ITX 디자인에 알맞게 설계되었음\n▶ 전면에 2x USB ports\n▶ 120mm 쿨링팬과 교체 가능한 필터장착\n▶ 후면에 5개의 COM Port를 장착할수 있는 hole\n▶ CASE 내부 열림방지용 자물쇠 구멍 추가 장착",
+    "badges": [],
+    "filterTags": [
+      "장기공급",
+      "PCI 슬롯"
+    ],
+    "highlights": [],
+    "applications": [
+      "소형 계측 박스",
+      "현장 시험장비",
+      "반도체 장비"
+    ],
+    "specs": [
+      {
+        "label": "지원하는 메인보드",
+        "value": "ATX and microATX,mini-ITX form"
+      },
+      {
+        "label": "전면베이",
+        "value": "5.25” X 3 "
+      },
+      {
+        "label": "전면 쿨링팬",
+        "value": "120mm FAN"
+      },
+      {
+        "label": "확장슬롯",
+        "value": "7슬롯"
+      },
+      {
+        "label": "무게",
+        "value": "8KG"
+      },
+      {
+        "label": "Dimensions(DxWxH)",
+        "value": "430mm x 184mm x 330mm"
+      }
+    ],
+    "supplyYears": "7년 장기 공급",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "IEI",
+    "imageUrl": "/uploads/1794805755031-44444.jpg",
+    "datasheetUrl": "/uploads/datasheets/1794806008858-IRATX-3.pdf"
+  },
+  {
+    "slug": "tank-xm811",
+    "modelCode": "TANK-XM811",
+    "name": "팬리스 고확장 임베디드 박스 PC",
+    "category": "ipc",
+    "categoryLabel": "산업용 컴퓨터",
+    "visualType": "box-pc",
+    "tagline": "PCIe 확장 슬롯을 내장한 고성능 Intel 12/13세대 팬리스 산업용 PC",
+    "summary": "일체형 알루미늄 압출 히트싱크와 2개의 PCIe/PCI 확장 백플레인을 결합해, 팬리스 환경에서도 모션 제어·프레임 그래버 카드를 장착할 수 있는 플래그십 박스 PC입니다.",
+    "badges": [
+      "팬리스",
+      "PCIe 확장",
+      "6x COM",
+      "9~36V DC"
+    ],
+    "filterTags": [
+      "팬리스",
+      "다중 시리얼",
+      "PCI 슬롯",
+      "장기공급",
+      "광온도"
+    ],
+    "highlights": [
+      "Intel 12/13세대 Core i5/i7 탑재 & 쿨링팬 없는 완전 무소음·방진 구조",
+      "PCIe x16 + PCIe x4 또는 PCI 확장 백플레인 내장",
+      "9~36V 광대역 DC 입력 및 -20~60°C 산업용 온도 지원"
+    ],
+    "applications": [
+      "반도체 장비 제어 PC",
+      "AGV/AMR 자율주행 제어",
+      "고정밀 비전 검사"
+    ],
+    "specs": [
+      {
+        "label": "프로세서",
+        "value": "Intel 12/13th Gen Core i5 / i7"
+      },
+      {
+        "label": "확장 베이",
+        "value": "PCIe x16 + PCIe x4 (또는 PCI 옵션)"
+      },
+      {
+        "label": "I/O",
+        "value": "2.5GbE LAN x2, COM x6, USB 3.2 x6, DIO 8-bit"
+      },
+      {
+        "label": "전원 / 온도",
+        "value": "DC 9~36V / -20°C ~ 60°C"
+      }
+    ],
+    "supplyYears": "7년 장기 공급 보장",
+    "operatingTemp": "-20°C ~ 60°C",
+    "manufacturer": "IEI",
+    "externalUrl": "https://www.ieiworld.com/kr/product/TANK-XM811.php",
+    "imageUrl": "/images/tank-xm811.png",
+    "datasheetUrl": "https://dls.ieiworld.com/IEIWeb/PDC_OBJ/NOTES/DATASHEET/2022_Catalog/Industrial_System/TANK-XM811_20240910.pdf"
+  },
+  {
+    "slug": "ecw-281b-ehl",
+    "modelCode": "IMBA-AM5",
+    "name": "고성능 AMD CPU를 지원하는 최신 산업용 보드",
+    "category": "motherboard",
+    "categoryLabel": "산업용 메인보드",
+    "visualType": "atx",
+    "tagline": "AMD Ryzen™ 프로세서 기반의 고성능 ATX 산업용 마더보드, 차세대 자동화 및 머신비전 솔루션 최적화",
+    "summary": "핵심 설계 특장점 (Key Features)\n최신 AMD 플랫폼 지원: 고성능 AMD AM5 소켓 기반 프로세서 탑재로 뛰어난 연산 성능과 전력 효율 제공\n\n산업용 확장 슬롯: PCIe 4.0 및 다양한 확장 슬롯을 갖추어 고속 프레임 그래버 카드, 모션 제어 카드 장착 용이\n\n고속 네트워킹: 듀얼(Dual) 2.5GbE 네트워크 포트를 지원하여 대용량 데이터 전송 및 실시간 제어 환경에 최적화\n\n안정적인 내구성: 극한의 산업 현장에서도 안정적으로 구동되는 고품질 콤포넌트 및 설계 적용",
+    "badges": [
+      "팬리스",
+      "초소형",
+      "Dual GbE",
+      "4x COM"
+    ],
+    "filterTags": [
+      "팬리스",
+      "다중 시리얼"
+    ],
+    "highlights": [],
+    "applications": [
+      "반도체 및 디스플레이 광학 검사 장비 (Machine Vision)\n스마트 팩토리 자동화 제어 시스템\n고성능 엣지 컴퓨팅 및 로보틱스 제어 PC"
+    ],
+    "specs": [
+      {
+        "label": "프로세서 소켓",
+        "value": "AMD AM5 socket supporting AMD Ryzen™ processors"
+      },
+      {
+        "label": "칩셋",
+        "value": "AMD SoC / Chipset"
+      },
+      {
+        "label": "메모리(RAM)",
+        "value": "DDR5 ECC / Non-ECC UDIMM (최대 용량 및 듀얼 채널 지원)"
+      },
+      {
+        "label": "디스플레이 출력",
+        "value": "HDMI, DisplayPort 등 멀티 디스플레이 인터페이스"
+      },
+      {
+        "label": "I/O 포트",
+        "value": "2.5GbE LAN x2, USB 3.2 포트, COM 포트(RS-232/422/485) 다수 탑재"
+      },
+      {
+        "label": "확장 인터페이스",
+        "value": "PCIe x16, PCIe x4 등 산업용 확장 슬롯"
+      }
+    ],
+    "supplyYears": "7년 장기 공급 보장",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "IEI",
+    "externalUrl": "https://www.ieiworld.com/kr/product/IMBA-AM5.php",
+    "imageUrl": "https://www.ieiworld.com/_images/product/items/1038_1.png?t=2026-11-16_12",
+    "datasheetUrl": "https://dls.ieiworld.com/IEIWeb/PDC_OBJ/NOTES/DATASHEET/2022_Catalog/Embedded_Computer/IMBA-AM5_20251209_EN.pdf"
+  },
+  {
+    "slug": "ipc-4u-picmg14",
+    "modelCode": "RACK-360",
+    "name": "4U 14-slot Full-size Rackmount Chassis",
+    "category": "module",
+    "categoryLabel": "케이스 및 기타",
+    "visualType": "rackmount",
+    "tagline": "RACK-360 4U 14-slot Full-size Rackmount Chassis",
+    "summary": "효율적이고 RoHS 규정을 준수하는 설계\n유연한 드라이브 구성 \n전면 패널에 USB 포트 2개 탑재 \n교체 가능한 필터가 장착된 12cm 냉각 팬 \n무단 접근을 방지하는 잠금 장치형 도어",
+    "badges": [
+      "4U 랙"
+    ],
+    "filterTags": [
+      "장기공급"
+    ],
+    "highlights": [],
+    "applications": [
+      "반도체 테스트 핸들러",
+      "자동차 전장 테스트 벤치",
+      "국방 계측 시스템"
+    ],
+    "specs": [
+      {
+        "label": " Construction",
+        "value": "Heavy duty metal"
+      },
+      {
+        "label": " Color",
+        "value": "B: Black/ W: White"
+      },
+      {
+        "label": " Weight (Net/Gross",
+        "value": "11 kg/15.4 kg"
+      },
+      {
+        "label": " Dimensions (DxWxH)",
+        "value": "435.5 mm x 431 mm x 176 mm"
+      }
+    ],
+    "supplyYears": "7년 장기 공급 보장",
+    "operatingTemp": "0°C ~ 50°C",
+    "manufacturer": "ICTech / IEI",
+    "externalUrl": "https://www.ieiworld.com/kr/product/RACK-360.php",
+    "imageUrl": "https://www.ieiworld.com/_images/product/items/157_1.png?t=2026-11-16_12",
+    "datasheetUrl": "https://dls.ieiworld.com/IEIWeb/PDC_OBJ/NOTES/DATASHEET/2022_Catalog/Industrial_System/RACK-360G_20230818.pdf"
+  },
+  {
+    "slug": "pe-14s4",
+    "modelCode": "ICT-700AF",
+    "name": "DeskTop/Wall-Mount Industrial Chassis, Support ATX / Micro-ATX Motherboard",
+    "category": "module",
+    "categoryLabel": "케이스 및 기타",
+    "visualType": "pcie-card",
+    "tagline": "ICT-700AF",
+    "summary": "전면 USB, 전면 7SLOT,전면 시리얼포트를 모두 지원하며 후면부 케이스팬과 파워서플라이가 연결됨.",
+    "badges": [
+      "14-Slot",
+      "PICMG 1.3",
+      "PCIe + PCI",
+      "ATX 파워"
+    ],
+    "filterTags": [
+      "장기공급",
+      "PCI 슬롯"
+    ],
+    "highlights": [],
+    "applications": [
+      "반도체 검사",
+      "산업용 장비",
+      "비전용 장비"
+    ],
+    "specs": [
+      {
+        "label": "규격",
+        "value": "7-Slot ATX 메인모드 및 MICRO ATX"
+      }
+    ],
+    "supplyYears": "7년 장기 공급 보장",
+    "operatingTemp": "0°C ~ 60°C",
+    "manufacturer": "ictech.co.kr"
+  }
+]
