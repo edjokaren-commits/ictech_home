@@ -1,5 +1,4 @@
-import fs from "node:fs/promises";
-import path from "node:path";
+import { getSupabaseAdmin } from "@/lib/supabase";
 
 export interface InquiryRecord {
   id: string;
@@ -20,43 +19,65 @@ export interface InquiryRecord {
   emailError?: string;
 }
 
-const DATA_DIR = path.join(process.cwd(), "data");
-const INQUIRIES_FILE = path.join(DATA_DIR, "inquiries.json");
-
-let writeQueue: Promise<void> = Promise.resolve();
-
 export async function getAllInquiries(): Promise<InquiryRecord[]> {
+  const supabase = getSupabaseAdmin();
+  if (!supabase) return [];
+
   try {
-    await fs.mkdir(DATA_DIR, { recursive: true });
-    const raw = await fs.readFile(INQUIRIES_FILE, "utf-8");
-    const parsed = JSON.parse(raw);
-    return Array.isArray(parsed) ? (parsed as InquiryRecord[]) : [];
-  } catch {
+    const { data, error } = await supabase
+      .from("inquiries")
+      .select("data, created_at")
+      .order("created_at", { ascending: false });
+
+    if (error) throw error;
+    return (data || []).map((row) => row.data as InquiryRecord);
+  } catch (err) {
+    console.error("getAllInquiries error:", err);
     return [];
   }
 }
 
 export async function saveAllInquiries(list: InquiryRecord[]): Promise<void> {
-  const run = async () => {
-    await fs.mkdir(DATA_DIR, { recursive: true });
-    const tmpPath = `${INQUIRIES_FILE}.${process.pid}.${Date.now()}.tmp`;
-    await fs.writeFile(tmpPath, JSON.stringify(list, null, 2), "utf-8");
-    await fs.rename(tmpPath, INQUIRIES_FILE);
-  };
-  writeQueue = writeQueue.then(run, run);
-  return writeQueue;
+  const supabase = getSupabaseAdmin();
+  if (!supabase) return;
+
+  if (list.length === 0) {
+    await supabase.from("inquiries").delete().neq("id", "");
+    return;
+  }
+
+  const rows = list.map((item) => ({
+    id: item.id,
+    data: item,
+    created_at: item.createdAt || new Date().toISOString(),
+  }));
+  const { error } = await supabase.from("inquiries").upsert(rows, { onConflict: "id" });
+  if (error) throw error;
 }
 
 export async function addInquiry(record: InquiryRecord): Promise<InquiryRecord[]> {
-  const list = await getAllInquiries();
-  const next = [record, ...list];
-  await saveAllInquiries(next);
-  return next;
+  const supabase = getSupabaseAdmin();
+  if (!supabase) return [record];
+
+  const { error } = await supabase.from("inquiries").upsert(
+    {
+      id: record.id,
+      data: record,
+      created_at: record.createdAt || new Date().toISOString(),
+    },
+    { onConflict: "id" }
+  );
+  if (error) throw error;
+
+  return getAllInquiries();
 }
 
 export async function deleteInquiryById(id: string): Promise<InquiryRecord[]> {
-  const list = await getAllInquiries();
-  const next = list.filter((item) => item.id !== id);
-  await saveAllInquiries(next);
-  return next;
+  const supabase = getSupabaseAdmin();
+  if (!supabase) return [];
+
+  const { error } = await supabase.from("inquiries").delete().eq("id", id);
+  if (error) throw error;
+
+  return getAllInquiries();
 }

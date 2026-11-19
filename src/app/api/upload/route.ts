@@ -1,10 +1,8 @@
-import fs from "node:fs/promises";
 import path from "node:path";
 import { NextResponse } from "next/server";
 import { isAdminAuthenticated } from "@/lib/admin-auth";
+import { getSupabaseAdmin } from "@/lib/supabase";
 
-const UPLOAD_DIR = path.join(process.cwd(), "public", "uploads");
-const DATASHEET_DIR = path.join(UPLOAD_DIR, "datasheets");
 const ALLOWED_IMAGE_EXT = new Set([".png", ".jpg", ".jpeg", ".webp", ".gif"]);
 const ALLOWED_DATASHEET_EXT = new Set([
   ".pdf",
@@ -26,6 +24,15 @@ export async function POST(request: Request) {
   if (!(await isAdminAuthenticated())) {
     return NextResponse.json({ error: "관리자 인증이 필요합니다." }, { status: 401 });
   }
+
+  const supabase = getSupabaseAdmin();
+  if (!supabase) {
+    return NextResponse.json(
+      { error: "Supabase 환경 변수(SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY)가 설정되지 않았습니다." },
+      { status: 500 }
+    );
+  }
+
   try {
     const formData = await request.formData();
     const file = formData.get("file");
@@ -45,18 +52,24 @@ export async function POST(request: Request) {
         );
       }
 
-      await fs.mkdir(DATASHEET_DIR, { recursive: true });
       const baseName = path
         .basename(file.name, ext)
         .replace(/[^a-zA-Z0-9_-]/g, "_")
         .slice(0, 40);
-      const filename = `${Date.now()}-${baseName || "datasheet"}${ext}`;
-      const targetPath = path.join(DATASHEET_DIR, filename);
-
+      const storagePath = `datasheets/${Date.now()}-${baseName || "datasheet"}${ext}`;
       const buffer = Buffer.from(await file.arrayBuffer());
-      await fs.writeFile(targetPath, buffer);
 
-      return NextResponse.json({ url: `/uploads/datasheets/${filename}` }, { status: 201 });
+      const { error: uploadError } = await supabase.storage
+        .from("uploads")
+        .upload(storagePath, buffer, {
+          contentType: file.type || "application/octet-stream",
+          upsert: true,
+        });
+
+      if (uploadError) throw uploadError;
+
+      const { data } = supabase.storage.from("uploads").getPublicUrl(storagePath);
+      return NextResponse.json({ url: data.publicUrl }, { status: 201 });
     }
 
     if (!ALLOWED_IMAGE_EXT.has(ext)) {
@@ -66,18 +79,24 @@ export async function POST(request: Request) {
       );
     }
 
-    await fs.mkdir(UPLOAD_DIR, { recursive: true });
     const baseName = path
       .basename(file.name, ext)
       .replace(/[^a-zA-Z0-9_-]/g, "_")
       .slice(0, 40);
-    const filename = `${Date.now()}-${baseName || "product"}${ext}`;
-    const targetPath = path.join(UPLOAD_DIR, filename);
-
+    const storagePath = `images/${Date.now()}-${baseName || "product"}${ext}`;
     const buffer = Buffer.from(await file.arrayBuffer());
-    await fs.writeFile(targetPath, buffer);
 
-    return NextResponse.json({ url: `/uploads/${filename}` }, { status: 201 });
+    const { error: uploadError } = await supabase.storage
+      .from("uploads")
+      .upload(storagePath, buffer, {
+        contentType: file.type || "image/png",
+        upsert: true,
+      });
+
+    if (uploadError) throw uploadError;
+
+    const { data } = supabase.storage.from("uploads").getPublicUrl(storagePath);
+    return NextResponse.json({ url: data.publicUrl }, { status: 201 });
   } catch (error) {
     return NextResponse.json(
       { error: "파일 업로드 중 오류가 발생했습니다.", detail: String(error) },
